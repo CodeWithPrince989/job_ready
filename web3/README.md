@@ -189,3 +189,5 @@ c. Interface
 - User Interface Design
 - Client-side code for communicating with MetaMask
 - Run the Application
+
+

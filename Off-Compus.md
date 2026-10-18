@@ -1,21 +1,5 @@
 # Off-Campus Placement Exams & Hiring Programs (B.Tech CSE)
 
-## 1. Mass Recruiter Hiring Programs
-
-| Company       | Hiring Program                    | Package Range |
-| ------------- | --------------------------------- | ------------- |
-| TCS           | TCS NQT Prime/Digital             | 7–11+ LPA     |
-| Infosys       | Specialist Programmer (SP)        | 9–13+ LPA     |
-| Infosys       | Digital Specialist Engineer (DSE) | 6–9 LPA       |
-| Wipro         | Turbo                             | 6–10 LPA      |
-| Cognizant     | GenC Next                         | 6–9 LPA       |
-| Accenture     | Advanced ASE                      | 6–12 LPA      |
-| Capgemini     | Exceller                          | 5–8 LPA       |
-| HCLTech       | Graduate Engineer Trainee         | 5–8 LPA       |
-| Tech Mahindra | Super Coder                       | 5–8 LPA       |
-
----
-
 # 2. Employability Assessment Exams
 
 ## AMCAT
