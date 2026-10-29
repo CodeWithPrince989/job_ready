@@ -2,7 +2,7 @@
 
 ---
 
-Week - 1(28Oct to 1Nov):
+Week - 1(28Oct to 1Nov) -> HTML & CSS:
 Your seven-day challenge
 - Day 1: Rebuild the navbar without looking at the code.
 - Day 2: Create a hero section from a screenshot.
