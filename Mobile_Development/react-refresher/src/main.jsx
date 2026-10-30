@@ -9,5 +9,6 @@ createRoot(document.getElementById('root')).render(
   <h1 className="title" id="heading">
     Welcome to Mobile Dev! {name}
   </h1>
+  <App />
   </div>
 );
