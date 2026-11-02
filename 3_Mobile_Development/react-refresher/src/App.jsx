@@ -1,11 +1,17 @@
+import { useState } from "react";
+
+
 function App(){
+
+    const [count, setCount] = useState(0);
+
     return (
-        <div>
-            <H1 title="Heading-1" desc="Hello i am desc-1"/>
-            <H1 title="Heading-2" desc="Hello i am desc-2"/>
-            <H1 title="Heading-3" desc="Hello i am desc-3"/>
+        <div>       
+            <h1>{count}</h1>
+            <button onClick={()=>setCount(count+1)}>Increment</button>
+            <button onClick={()=>setCount(count-1)}>Decrement</button>
         </div>
-    )
+    );
 }
 
 export default App
