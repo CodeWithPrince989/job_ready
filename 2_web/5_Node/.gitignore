@@ -1,8 +1,12 @@
 node_modules/
-*.json
-*.ts
 dist/
-.env# Logs
+.env
+
+# Generated declaration files at the project root
+/env.d.ts
+/env.d.ts.map
+
+# Logs
 logs
 *.log
 npm-debug.log*

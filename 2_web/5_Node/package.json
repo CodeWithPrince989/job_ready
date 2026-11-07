@@ -1,0 +1,24 @@
+{
+  "name": "5_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node_fundamental.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc-watch --onSuccess \"node ./dist/index.js\""
+  },
+  "keywords": [],
+  "author": "Prince",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0",
+    "tsc-watch": "^7.2.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

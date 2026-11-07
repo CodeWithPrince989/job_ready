@@ -1,21 +1,33 @@
 const http = require('http')
 
-const server  = http.createServer((res, req) => {
-    if (req.method === 'GET' && req.url === '/menu' ) {
-        res.writeHead(200, {'Content-Type': 'application/json'})
-        res.readableEnded(JSON.stringify({items:['thali', 'biryani']}))
+const server = http.createServer((req, res) => {
+    if (req.method === 'GET' && req.url === '/menu') {
+        res.writeHead(200, { 'Content-Type': 'application/json' })
+        res.end(JSON.stringify({ items: ['thali', 'biryani'] }))
+        return
+    }
 
-    }else if (req.method === 'POST' && req.url === '/order'){
+    if (req.method === 'POST' && req.url === '/order') {
         let data = ''
-        req.on('data', chunk => data += chunk)
-        req.on('end', () => {
-            const order = JSON.parse(data)
-            res.writeHead(200, {"Content-Type": "applaication/json"})
-            res.readableEnded(JSON.stringify({
-                status: 'received',
-                order
-            }));
+
+        req.on('data', chunk => {
+            data += chunk
         })
+
+        req.on('end', () => {
+            try {
+                const order = JSON.parse(data)
+                res.writeHead(200, { 'Content-Type': 'application/json' })
+                res.end(JSON.stringify({ status: 'received', order }))
+            } catch {
+                res.writeHead(400, { 'Content-Type': 'application/json' })
+                res.end(JSON.stringify({ error: 'Request body must be valid JSON' }))
+            }
+        })
+        return
     }
 })
 
+server.listen(8081, () => {
+    console.log('Node HTTP server is running at http://localhost:8081')
+})
