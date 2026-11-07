@@ -1,15 +1,29 @@
 import { useState } from "react";
 
+const App = () => {
+    const [darkMode, setDarkMode] = useState(false);
 
-function App(){
-
-    const [count, setCount] = useState(0);
+function onToogleTheme(){
+    setDarkMode(!darkMode)
+    console.log(darkMode)
+}
 
     return (
-        <div>       
-            <h1>{count}</h1>
-            <button onClick={()=>setCount(count+1)}>Increment</button>
-            <button onClick={()=>setCount(count-1)}>Decrement</button>
+        <div
+        style={{
+            height:"100vh",
+            backgroundColor:darkMode ? "#121212" : "#ffffff",
+            color: darkMode ? "#ffffff" : "#000000",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            transition: "0.3s"
+        }}>     
+            <h1>Mode {darkmode ? "Change to light" : "Change to "}</h1>
+            <button onClick={onToogleTheme}>
+                Toggle Theme
+            </button>
         </div>
     );
 }
